@@ -1,0 +1,187 @@
+@import url('reset.css');
+@import url('fonts.css');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    font-variation-settings: 'wght'500;
+}
+
+.container {
+    width: 95%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header {
+    height: 60px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: white;
+    box-shadow: 0 0 10px 0 rgb(220, 20, 53);
+    z-index: 2;
+}
+
+.section {
+    height: 100vh;
+    padding-top: 60px;
+}
+
+.d-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header-logo_link {
+    font-size: 30px;
+    color: rgb(220, 20, 53);
+}
+
+.header-menu_link {
+    font-size: 19px;
+    color: rgb(248, 200, 44);
+    text-transform: uppercase;
+    margin-left: 25px;
+}
+
+#home {
+    background-image: url(../images/laki.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#works {
+    background-image: url(../images/laki2.jpg);
+    background-size: cover;
+}
+
+#about,
+#contact {
+    background-color: white;
+}
+
+#home,
+#works {
+    background-attachment: fixed;
+}
+
+.home-title {
+    position: absolute;
+    top: 190px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    font-size: 80px;
+    line-height: 85px;
+}
+
+.about-photo {
+    width: 30%;
+    height: 70vh;
+    background-image: url(../images/foto.jpg);
+    background-size: cover;
+}
+
+.about-info {
+    width: 50%;
+}
+
+.about-info p {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.works-box {
+    width: 30%;
+    height: 17vw;
+    border: 3px solid black;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    font-size: 30px;
+    opacity: 0.5;
+    transition: all 0.7s;
+}
+
+.works-box:hover {
+    cursor: pointer;
+    opacity: 1;
+    transform: scale(1.1)
+}
+
+.contact-info {
+    width: 30%;
+}
+
+.contact-map {
+    width: 60%;
+    height: 70vh;
+    border: 10px solid rgb(220, 20, 53);
+}
+
+.contact-info p {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    border: 2px solid rgb(24, 49, 13);
+    padding: 5px;
+    margin-bottom: 10px;
+    font-family: 'Oswald', sans-serif;
+    font-variation-settings: 'wght'500;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: peru;
+}
+
+.form-button {
+    display: block;
+    margin: 0 auto;
+    padding: 5px 15px;
+    border: 3px solid rgb(24, 49, 13);
+    background-color: white;
+    font-family: 'Oswald', sans-serif;
+    font-variation-settings: 'wght'500;
+    transition: all 0.5s;
+}
+
+.form-button:hover {
+    color: rgb(220, 20, 53);
+    transform: scale(1.1)
+}
+
+.d-flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer {
+    height: 40px;
+    background-color: rgb(38, 77, 21);
+    color: black;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
